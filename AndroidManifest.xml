@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="dev.intelligrape.igdroid" android:versionCode="1"
+	package="com.intelligrape.apps.igdroid" android:versionCode="1"
 	android:versionName="1.0">
 	<uses-sdk android:minSdkVersion="10" android:targetSdkVersion="10"/>
 
@@ -12,8 +12,9 @@
 			</intent-filter>
 		</activity>
 		<activity android:name=".ContactInfoActivity"></activity>
+		<activity android:name=".DashboardActivity"></activity>
 		<activity android:name=".ContactDetailActivity"
 			android:label="@string/contactDetails"></activity>
-		<activity android:name=".ContactMailActivity" android:label="@string/contactDetailsMail"></activity>
+		<activity android:name="com.intelligrape.apps.igdroid.ContactMailActivity" android:label="@string/contactDetailsMail"></activity>
 	</application>
 </manifest>

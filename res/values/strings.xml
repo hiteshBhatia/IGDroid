@@ -10,4 +10,8 @@
     <string name="Subject">Subject</string>
     <string name="Comment">Comment</string>
     <string name="send_message">Send Message</string>
+    <string name="contactus">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="how_we_work">How We Work</string>
+    <string name="our_technology">Our Technology </string>
 </resources>
