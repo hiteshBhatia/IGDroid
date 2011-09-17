@@ -17,17 +17,12 @@ public class ContactInfoActivity extends TabActivity {
 	    Intent intent; 
 	    
 	    intent = new Intent().setClass(this, ContactDetailActivity.class);	    
-	    spec = tabHost.newTabSpec("contactInfo").setIndicator("Info",
-	                      res.getDrawable(R.drawable.icon))
-	                  .setContent(intent);
+	    spec = tabHost.newTabSpec("contactInfo").setIndicator("Info", res.getDrawable(R.drawable.icon)).setContent(intent);
 	    tabHost.addTab(spec);
 	    
 	    intent = new Intent().setClass(this, ContactMailActivity.class);
-	    spec = tabHost.newTabSpec("query").setIndicator("Query",
-	                      res.getDrawable(R.drawable.icon))
-	                  .setContent(intent);
+	    spec = tabHost.newTabSpec("query").setIndicator("Query",res.getDrawable(R.drawable.icon)).setContent(intent);
 	    tabHost.addTab(spec);
-
 
 	    tabHost.setCurrentTab(0);
 	}

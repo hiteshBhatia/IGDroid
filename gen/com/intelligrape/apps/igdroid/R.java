@@ -17,23 +17,25 @@ public final class R {
         public static final int phone=0x7f020003;
     }
     public static final class id {
-        public static final int button1=0x7f050005;
-        public static final int editText1=0x7f050007;
-        public static final int editText2=0x7f050006;
-        public static final int editText3=0x7f050008;
-        public static final int editText4=0x7f05000a;
-        public static final int imageButton1=0x7f050002;
-        public static final int imageView1=0x7f050004;
-        public static final int spinner1=0x7f050009;
-        public static final int tableLayout1=0x7f050000;
-        public static final int tableRow1=0x7f050001;
-        public static final int textView1=0x7f050003;
+        public static final int button1=0x7f050006;
+        public static final int editText1=0x7f050008;
+        public static final int editText2=0x7f050007;
+        public static final int editText3=0x7f050009;
+        public static final int editText4=0x7f05000b;
+        public static final int imageButton1=0x7f050003;
+        public static final int imageView1=0x7f050005;
+        public static final int spinner1=0x7f05000a;
+        public static final int tableLayout1=0x7f050001;
+        public static final int tableRow1=0x7f050002;
+        public static final int textView1=0x7f050000;
+        public static final int textView2=0x7f050004;
     }
     public static final class layout {
-        public static final int contactus=0x7f030000;
-        public static final int dashboard=0x7f030001;
-        public static final int main=0x7f030002;
-        public static final int query=0x7f030003;
+        public static final int contact_info=0x7f030000;
+        public static final int contactus=0x7f030001;
+        public static final int dashboard=0x7f030002;
+        public static final int main=0x7f030003;
+        public static final int query=0x7f030004;
     }
     public static final class string {
         public static final int Comment=0x7f040008;
@@ -48,6 +50,9 @@ public final class R {
         public static final int contactus=0x7f04000a;
         public static final int how_we_work=0x7f04000c;
         public static final int intro=0x7f040000;
+        public static final int our_address=0x7f04000e;
+        public static final int our_number_1=0x7f04000f;
+        public static final int our_number_2=0x7f040010;
         public static final int our_technology=0x7f04000d;
         public static final int send_message=0x7f040009;
     }

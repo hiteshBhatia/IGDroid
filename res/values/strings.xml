@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="intro">Intelligrape\'s\n Android App \n\n</string>
-    <string name="app_name">IGDroid</string>
-    <string name="Enter">Enter</string>
-    <string name="contactDetails">Contact Details</string>
-    <string name="contactDetailsMail">Contact Us</string>
-    <string name="Name">Name</string>
-    <string name="Email">Email</string>
-    <string name="Subject">Subject</string>
-    <string name="Comment">Comment</string>
-    <string name="send_message">Send Message</string>
-    <string name="contactus">Contact Us</string>
-    <string name="about_us">About Us</string>
-    <string name="how_we_work">How We Work</string>
-    <string name="our_technology">Our Technology </string>
+	<string name="intro">Intelligrape\'s\n Android App \n\n</string>
+	<string name="app_name">Intelligrape</string>
+	<string name="Enter">Enter</string>
+	<string name="contactDetails">Contact Details</string>
+	<string name="contactDetailsMail">Contact Us</string>
+	<string name="Name">Name</string>
+	<string name="Email">Email</string>
+	<string name="Subject">Subject</string>
+	<string name="Comment">Comment</string>
+	<string name="send_message">Send Message</string>
+	<string name="contactus">Contact Us</string>
+	<string name="about_us">About Us</string>
+	<string name="how_we_work">How We Work</string>
+	<string name="our_technology">Our Technology </string>
+	<string name="our_address">Contact Address \nIntelliGrape Software (P) Ltd
+		\nSDF L-6, NSEZ \nNoida Phase 2\nIndia
+			
+		</string>
+	<string name="our_number_1">91-120-4207638</string>
+	<string name="our_number_2">91-120-4207689</string>
 </resources>
