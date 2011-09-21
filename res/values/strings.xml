@@ -5,8 +5,9 @@
 	<string name="Enter">Enter</string>
 	<string name="contactDetails">Contact Details</string>
 	<string name="contactDetailsMail">Contact Us</string>
-	<string name="Name">Name</string>
+	<string name="Name">FirstName LastName</string>
 	<string name="Email">Email</string>
+	<string name="emailUs">Email Us</string>
 	<string name="Subject">Subject</string>
 	<string name="Comment">Comment</string>
 	<string name="send_message">Send Message</string>
@@ -20,4 +21,16 @@
 		</string>
 	<string name="our_number_1">91-120-4207638</string>
 	<string name="our_number_2">91-120-4207689</string>
+	<string name="fax">Fax</string>
+	<string-array name="category_array">
+        <item>Sales</item>
+        <item>Info/Feedback</item>
+        <item>Jobs</item>        
+    </string-array>
+    <string name="chooseIntent">Send your email in: </string>
+    <string-array name="recipient_array">
+        <item>hitesh@intelligrape.com</item>               
+    </string-array>
+    <string name="recipient">hitesh@intelligrape.com</string>
+    
 </resources>
