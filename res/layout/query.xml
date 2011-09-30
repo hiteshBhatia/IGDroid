@@ -3,8 +3,8 @@
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	xmlns:android="http://schemas.android.com/apk/res/android">
 	<LinearLayout android:id="@+id/linearLayout1"
-		android:layout_width="match_parent" android:orientation="vertical"
-		android:layout_height="match_parent">
+		android:orientation="vertical" android:layout_height="wrap_content"
+		android:layout_width="match_parent">
 
 		<EditText android:id="@+id/editText1" android:layout_width="match_parent"
 			android:layout_height="match_parent" android:inputType="textPersonName"
@@ -16,17 +16,17 @@
 			android:hint="@string/Email"></EditText>
 		<EditText android:layout_width="match_parent" android:id="@+id/editText3"
 			android:layout_height="wrap_content" android:hint="@string/Subject"></EditText>
-			
+
 		<Spinner android:layout_width="match_parent" android:id="@+id/spinner1"
 			android:layout_height="wrap_content"></Spinner>
-			
+
 		<EditText android:layout_width="match_parent" android:id="@+id/editText4"
 			android:inputType="textMultiLine" android:layout_height="246dp"
 			android:hint="@string/Comment"></EditText>
-			
+
 		<Button android:layout_width="match_parent" android:text="Button"
-	android:layout_height="wrap_content" android:id="@+id/button1"
-	android:onClick="collectDataAndSendMail"></Button>
+			android:layout_height="wrap_content" android:id="@+id/button1"
+			android:onClick="collectDataAndSendMail"></Button>
 
 	</LinearLayout>
 </ScrollView>

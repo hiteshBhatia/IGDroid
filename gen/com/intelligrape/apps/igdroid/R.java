@@ -61,10 +61,12 @@ public final class R {
         public static final int fax=0x7f040012;
         public static final int how_we_work=0x7f04000d;
         public static final int intro=0x7f040000;
+        public static final int mail_alert_title=0x7f040015;
         public static final int our_address=0x7f04000f;
         public static final int our_number_1=0x7f040010;
         public static final int our_number_2=0x7f040011;
         public static final int our_technology=0x7f04000e;
+        public static final int pos_button_title=0x7f040016;
         public static final int recipient=0x7f040014;
         public static final int send_message=0x7f04000a;
     }

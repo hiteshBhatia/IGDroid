@@ -32,5 +32,7 @@
         <item>hitesh@intelligrape.com</item>               
     </string-array>
     <string name="recipient">hitesh@intelligrape.com</string>
+    <string name="mail_alert_title">Query Sent To Intelligrape</string>
+    <string name="pos_button_title">Okay</string>
     
 </resources>
