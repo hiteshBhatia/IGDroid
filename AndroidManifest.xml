@@ -2,13 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.intelligrape.apps.igdroid" android:versionCode="1"
 	android:versionName="1.0">
-	<uses-sdk android:minSdkVersion="10" android:targetSdkVersion="10"/>
+	<uses-sdk android:minSdkVersion="10" android:targetSdkVersion="10" />
 	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 	<uses-permission android:name="android.permission.INTERNET" />
-	
 
-	<application android:label="@string/app_name" android:icon="@drawable/logoig">
-		<activity android:name="IGDroidActivity" android:label="@string/app_name">
+
+	<application android:label="@string/app_name" android:icon="@drawable/ig_logo">
+		<activity android:name=".Main" android:label="@string/app_name">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
@@ -16,8 +16,11 @@
 		</activity>
 		<activity android:name=".ContactInfoActivity"></activity>
 		<activity android:name=".DashboardActivity"></activity>
+		<activity android:name=".HowWeWorkActivity"></activity>
+		<activity android:name=".OurTechnologyActivity"></activity>
 		<activity android:name=".ContactDetailActivity"
 			android:label="@string/contactDetails"></activity>
-		<activity android:name="com.intelligrape.apps.igdroid.ContactMailActivity" android:label="@string/contactDetailsMail"></activity>
+		<activity android:name="com.intelligrape.apps.igdroid.ContactMailActivity"
+			android:label="@string/contactDetailsMail"></activity>
 	</application>
 </manifest>

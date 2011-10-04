@@ -13,6 +13,8 @@
 	<string name="send_message">Send Message</string>
 	<string name="contactus">Contact Us</string>
 	<string name="about_us">About Us</string>
+	<string name="locateUs">Locate Us</string>
+
 	<string name="how_we_work">How We Work</string>
 	<string name="our_technology">Our Technology </string>
 	<string name="our_address">Contact Address \nIntelliGrape Software (P) Ltd
@@ -23,16 +25,116 @@
 	<string name="our_number_2">91-120-4207689</string>
 	<string name="fax">Fax</string>
 	<string-array name="category_array">
-        <item>Sales</item>
-        <item>Info/Feedback</item>
-        <item>Jobs</item>        
-    </string-array>
-    <string name="chooseIntent">Send your email in: </string>
-    <string-array name="recipient_array">
-        <item>hitesh@intelligrape.com</item>               
-    </string-array>
-    <string name="recipient">hitesh@intelligrape.com</string>
-    <string name="mail_alert_title">Query Sent To Intelligrape</string>
-    <string name="pos_button_title">Okay</string>
-    
+		<item>Sales</item>
+		<item>Info/Feedback</item>
+		<item>Jobs</item>
+	</string-array>
+	<string name="chooseIntent">Send your email in: </string>
+	<string-array name="recipient_array">
+		<item>hitesh@intelligrape.com</item>
+	</string-array>
+	<string name="recipient">hitesh@intelligrape.com</string>
+	<string name="mail_alert_title">Query Sent To Intelligrape</string>
+	<string name="pos_button_title">Okay</string>
+	<string name="whatwedo">We develop robust web applications with Groovy and
+		Grails</string>
+	<string name="our_technology_exp">We work with some of the most cutting edge
+		technologies open web has to offer. Building on best of breed
+		technologies allows us to be fast, secure, and scalable. We invest
+		quite a lot in exploring and learning new tools and technologies which
+		helps us sharpen our skill-set and increase our productivity on an
+		on-going basis. Knowledge sharing sessions, brown bag sessions, code
+		camps are integral part of our culture.</string>
+
+	<string-array name="tech_array">
+		<item>AJAX</item>
+		<item>Apache</item>
+		<item>Ant</item>
+		<item>Automated Testing</item>
+		<item>Amazon Cloud</item>
+		<item>Alfresco</item>
+		<item>CSS3</item>
+		<item>Canoo</item>
+		<item>Chargify</item>
+		<item> Cloud Foundry</item>
+		<item> DOJO</item>
+		<item> Ehcache</item>
+		<item> Flex</item>
+		<item> Firebug</item>
+		<item> Facebook Graph</item>
+		<item> Grails</item>
+		<item> Google App Engine</item>
+		<item> GORM</item>
+		<item> Google Maps</item>
+		<item> Google CheckOut</item>
+		<item> Google Web Optimizer</item>
+		<item> Git</item>
+		<item> Groovy</item>
+		<item> GData</item>
+		<item> HTML5</item>
+		<item> Hibernate</item>
+		<item> JSON</item>
+		<item> Jasper</item>
+		<item> Java</item>
+		<item> Jetty</item>
+		<item> JBOSS</item>
+		<item> JMS</item>
+		<item> jQuery</item>
+		<item> JiBX</item>
+		<item> JUnit</item>
+		<item> javascript</item>
+		<item> Linux</item>
+		<item> Liquibase</item>
+		<item> MySQL</item>
+		<item> Metaprogramming</item>
+		<item> PayPal</item>
+		<item> PostgreSQL</item>
+		<item> REST</item>
+		<item> Spring</item>
+		<item>SOAP</item>
+		<item>Selenium</item>
+		<item>SqlServer</item>
+		<item>Terracotta</item>
+		<item>Tomcat</item>
+	</string-array>
+	<string name="groovy_org">http://groovy.codehaus.org/</string>
+	<string name="grails_org">http://grails.org/</string>
+	<string name="search_google">Search It</string>
+	<string name="your_email">Your Email Id</string>
+	<string name="agile">Agile Mind-Set</string>
+	<string name="agile_theory_1">
+	We follow Agile Methodologies (combination of Scrum
+	and XP principles)
+	for application development.
+	We have in-depth experience in
+	implementing Agile in offshore development environment.
+	Grails
+	framework, Agile methodologies and our expertise in offshore
+	development enable us to build an application with startling speed and
+	robustness.</string>
+
+	<string name="agile_theory_2">We broadly follow the following steps for application development.
+	Comprehensive and detailed analysis of the business needs.
+	Segregation of requirements into small modules/iterations as per priority.
+	Initiate design concept and programming on iterations.
+	Client feedback on completion of each iteration.
+	Block wise testing of application to get the realtime feedback.
+	Practising Scrum and XP principals such as re-factoring, pair programming to eliminate redundancies and optimise efficiency.				
+	</string>
+
+	<string name="agile_theory_3">
+		Few of our integral processes include
+		Daily communication with almost all our clients Overlap of 4-6 hours with the client time zone ,		
+		Small iterations of 1-6 weeks ,  
+		Two way communication ,
+		Constant Feedback ,
+		Continuous Integration ,
+		Automated functional testing ,
+		Track of project status.						
+	</string>
+	<string name="our_work">Our Work</string>
+	<string name="fling_to_read_more">Flick to Read More</string>
+	<string name="find_us_on_web">Find us on Web</string>
+
 </resources>
+

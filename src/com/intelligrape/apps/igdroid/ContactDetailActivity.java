@@ -1,7 +1,5 @@
 package com.intelligrape.apps.igdroid;
 
-import com.intelligrape.apps.igdroid.basicIntents.IntentManager;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -37,12 +35,13 @@ public class ContactDetailActivity extends Activity {
 		sendEmail();
 	}
 
-	private void sendEmail() {
-		IntentManager intentManager = IntentManager.getInstance();
-		Intent emailIntent = intentManager.createEmailIntent(recipient,"subject","text");
-		startActivity(Intent.createChooser(emailIntent, chooseIntent));
+	private void sendEmail() {		
+		startActivity(new Intent(this, ContactMailActivity.class));
 	}
 	
+	public void backButtonClicked(View v){
+		finish();
+	}
 	
 
 	private void dialPhone() {

@@ -36,7 +36,7 @@
 			<ImageButton android:src="@android:drawable/sym_action_email"
 				android:id="@+id/imageButton2" android:layout_height="wrap_content"
 				android:layout_width="wrap_content"></ImageButton>
-				
+
 			<TextView android:layout_height="wrap_content" android:id="@+id/textView2"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:padding="10dp" android:layout_width="match_parent"
@@ -44,7 +44,37 @@
 			</TextView>
 		</TableRow>
 
+		<TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageButton android:src="@android:drawable/ic_dialog_map"
+				android:id="@+id/imageButton3" android:layout_height="wrap_content"
+				android:layout_width="wrap_content"></ImageButton>
+
+			<TextView android:layout_height="wrap_content" android:id="@+id/textView3"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="10dp" android:layout_width="match_parent"
+				android:text="@string/locateUs">
+			</TextView>
+		</TableRow>
+
+
+		<TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageButton android:src="@android:drawable/ic_dialog_map"
+				android:id="@+id/imageButton4" android:layout_height="wrap_content"
+				android:layout_width="wrap_content"></ImageButton>
+
+			<TextView android:layout_height="wrap_content" android:id="@+id/textView4"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="10dp" android:layout_width="match_parent"
+				android:text="@string/find_us_on_web">
+			</TextView>
+		</TableRow>
 	</TableLayout>
+	<ImageView android:onClick="backButtonClicked"
+	android:layout_height="42dp" android:layout_marginTop="100dp"
+	android:layout_width="match_parent" android:src="@drawable/ic_menu_home"
+	android:id="@+id/imageView1"></ImageView>
 
 
 </LinearLayout>

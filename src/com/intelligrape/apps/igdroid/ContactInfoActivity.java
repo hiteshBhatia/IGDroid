@@ -5,11 +5,11 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TabHost;
-
+// Todo :  Can be deleted
 public class ContactInfoActivity extends TabActivity {
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.contactus);
+	    setContentView(R.layout.contact_info);
 
 	    Resources res = getResources(); 
 	    TabHost tabHost = getTabHost(); 

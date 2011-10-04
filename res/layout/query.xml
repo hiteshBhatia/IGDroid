@@ -5,15 +5,12 @@
 	<LinearLayout android:id="@+id/linearLayout1"
 		android:orientation="vertical" android:layout_height="wrap_content"
 		android:layout_width="match_parent">
-
-		<EditText android:id="@+id/editText1" android:layout_width="match_parent"
-			android:layout_height="match_parent" android:inputType="textPersonName"
-			android:hint="@string/Name">
-			<requestFocus></requestFocus>
-		</EditText>
+		<EditText android:hint="@string/Name" android:inputType="textPersonName"
+			android:layout_height="match_parent" android:layout_width="match_parent"
+			android:id="@+id/editText1"></EditText>
 		<EditText android:layout_width="match_parent" android:id="@+id/editText2"
 			android:inputType="textEmailAddress" android:layout_height="wrap_content"
-			android:hint="@string/Email"></EditText>
+			android:hint="@string/your_email"></EditText>
 		<EditText android:layout_width="match_parent" android:id="@+id/editText3"
 			android:layout_height="wrap_content" android:hint="@string/Subject"></EditText>
 
@@ -24,9 +21,18 @@
 			android:inputType="textMultiLine" android:layout_height="246dp"
 			android:hint="@string/Comment"></EditText>
 
-		<Button android:layout_width="match_parent" android:text="Button"
-			android:layout_height="wrap_content" android:id="@+id/button1"
-			android:onClick="collectDataAndSendMail"></Button>
 
+	<LinearLayout android:id="@+id/relativeLayoutQuery"
+		android:layout_height="50dp" android:layout_width="match_parent"
+		android:weightSum="1">
+		<ImageButton android:src="@drawable/ic_menu_home"
+	android:id="@+id/imageButton1" android:layout_width="114dp"
+	android:layout_height="match_parent" android:onClick="backButtonClicked"></ImageButton>
+
+		<Button android:id="@+id/button2"
+			android:onClick="collectDataAndSendMail" android:layout_height="wrap_content"
+			android:text="Send Mail" android:layout_width="match_parent"></Button>
+
+	</LinearLayout>
 	</LinearLayout>
 </ScrollView>

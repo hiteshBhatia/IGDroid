@@ -29,7 +29,12 @@ public class ContactMailActivity extends BasicUIImplementation {
 		setContentView(R.layout.query);
 		setUpViews();
 	}
-
+	
+	public void backButtonClicked(View v){
+		finish();
+	}
+	
+	
 	private void setUpViews() {
 		contactMailActivity = this;
 		nameTextBox = (EditText) findViewById(R.id.editText1);
