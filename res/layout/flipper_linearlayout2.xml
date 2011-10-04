@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:id="@+id/linearLayout1"
+	android:layout_height="match_parent" android:orientation="vertical"
+	android:weightSum="1">
+
+	<ScrollView android:id="@+id/scrollView"
+		android:layout_width="match_parent" android:layout_height="300dp">
+		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="@string/agile_theory_2" android:textColor="@color/black"
+			android:id="@+id/agile_theory" android:layout_height="wrap_content"
+			android:layout_width="match_parent"></TextView>
+	</ScrollView>
+</LinearLayout>
+
