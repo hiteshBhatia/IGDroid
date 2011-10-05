@@ -73,7 +73,7 @@ public class OurTechnologyActivity extends BasicUIImplementation implements
 	}
 
 	public void searchGoogleClicked(View v) {
-		if (!term.isEmpty()) {
+		if (term.length() != 0) {
 			Intent searchIntent = IntentManager.getInstance()
 					.createSearchIntent(term);
 			startActivity(searchIntent);

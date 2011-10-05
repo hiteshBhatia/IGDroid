@@ -36,6 +36,7 @@
 	<string name="recipient">hitesh@intelligrape.com</string>
 	<string name="mail_alert_title">Query Sent To Intelligrape</string>
 	<string name="pos_button_title">Okay</string>
+	<string name="neg_button_title">Cancel</string>
 	<string name="whatwedo">We develop robust web applications with Groovy and
 		Grails</string>
 	<string name="our_technology_exp">We work with some of the most cutting edge
@@ -103,29 +104,33 @@
 	<string name="your_email">Your Email Id</string>
 	<string name="agile">Agile Mind-Set</string>
 	<string name="agile_theory_1">
-	We follow Agile Methodologies (combination of Scrum
-	and XP principles)
-	for application development.
-	We have in-depth experience in
-	implementing Agile in offshore development environment.
-	Grails
-	framework, Agile methodologies and our expertise in offshore
-	development enable us to build an application with startling speed and
-	robustness.</string>
+		We follow Agile Methodologies (combination of Scrum
+		and XP principles)
+		for application development.
+		We have in-depth experience in
+		implementing Agile in offshore development environment.
+		Grails
+		framework, Agile methodologies and our expertise in offshore
+		development enable us to build an application with startling speed and
+		robustness.</string>
 
-	<string name="agile_theory_2">We broadly follow the following steps for application development.
-	Comprehensive and detailed analysis of the business needs.
-	Segregation of requirements into small modules/iterations as per priority.
-	Initiate design concept and programming on iterations.
-	Client feedback on completion of each iteration.
-	Block wise testing of application to get the realtime feedback.
-	Practising Scrum and XP principals such as re-factoring, pair programming to eliminate redundancies and optimise efficiency.				
+	<string name="agile_theory_2">We broadly follow the following steps for
+		application development.
+		Comprehensive and detailed analysis of the business needs.
+		Segregation of requirements into small modules/iterations as per priority.
+		Initiate design concept and programming on iterations.
+		Client feedback on completion of each iteration.
+		Block wise testing of application to get the realtime feedback.
+		Practising Scrum and XP principals such as re-factoring, pair programming to
+		eliminate redundancies and optimise efficiency.				
 	</string>
 
 	<string name="agile_theory_3">
 		Few of our integral processes include
-		Daily communication with almost all our clients Overlap of 4-6 hours with the client time zone ,		
-		Small iterations of 1-6 weeks ,  
+		Daily
+		communication with almost all our clients Overlap of 4-6 hours with
+		the client time zone ,
+		Small iterations of 1-6 weeks ,
 		Two way communication ,
 		Constant Feedback ,
 		Continuous Integration ,
@@ -135,6 +140,36 @@
 	<string name="our_work">Our Work</string>
 	<string name="fling_to_read_more">Flick to Read More</string>
 	<string name="find_us_on_web">Find us on Web</string>
+	<string name="about_us_full">We are a web application development company based
+		in India focused on Groovy and Grails development.
+		IntelliGrape specializes in delivering high quality applications using Groovy and
+		Grails. We have been working on Grails since its release of version
+		0.4. Our expertise on Groovy and Grails coupled with Agile mind-set
+		helps us build mission critical applications with unmatched speed and
+		quality</string>
+		
+	<string name="testimonials">Testimonials</string>
+		
+	<string name="about_us_label">Intelligrape  - About Us</string>
+		
+	<string name="our_technology_label">Intelligrape -  Our Technology</string>
+		
+	<string name="how_we_work_label">Intelligrape - How We Work</string>
+		
+	<string name="contact_us_label">Intelligrape - Contact Us</string>
+		
+	<string name="testi_1">I have been working with Intelligrape for the past 2 years. They have handled everything from development to server setup. They are always available to fix any emergencies" that come up. I really cant recommend Intelligrape highly enough. - Justin Nolan - Founder of BuildingBlok
+	</string>
+		
+	<string name="testi_4">Apart from experience, the most important thing to consider when outsourcing your project to an external company is trust. I confirm that I highly trust IntelliGrapes team and I will definitely work with them again and again. - Fabien Benichou - Founder And CEO of Irosport SAS, France</string>
+	<string name="testi_3">We get great results with IntelliGrape. Over time, we have entrusted them with building more and more of core functionality. Team we have worked with is very responsive and reliable. - George Lee - Co-Founder of CloudFi Inc., California, US</string>
+	<string name="testi_2">Agile methods combined with Grails, constant communication and experienced developers make it a very smooth experience working with Intelligrape. Out first project is almost complete and we look forward to initiate the next. - Mikael Andersson - Co-Founder of Altaworks AB, Sweden</string>
+	<string name="intelligrape_contact_us_label">Intelligrape - Contact Us</string>
+	<string name="contact_info_alert_warn">Any Unsent Mail Will Be Lost. Are You Sure ?</string>
+	<string name="mail_alert_fail">Mail Sending Failed</string>
+	<string name="mail_alert">Are You Sure Want To Mail </string>
+	<string name="error_alert">All Fields Except Comment Are Required</string>
+	
 
 </resources>
 

@@ -12,4 +12,29 @@
 		<item name="android:layout_width">50dp</item>
 		<item name="android:layout_height"> 50dp</item>
 	</style>
+	<style name="how_we_work_text_view" parent="android:Widget.TextView">
+		<item name="android:padding">5dp</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:textColor">@color/black</item>
+		<item name="android:typeface">serif</item>
+	</style>
+
+	<style name="contact_info_table_row" parent="android:Widget.TextView">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	
+	<style name="contact_info_table_text_view" parent="android:Widget.TextView">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:textColor">@color/black</item>
+		<item name="android:typeface">serif</item>		
+		
+	</style>
+	
+			
+	
+
 </resources>

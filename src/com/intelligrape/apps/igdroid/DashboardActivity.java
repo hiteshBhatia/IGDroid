@@ -28,6 +28,13 @@ public class DashboardActivity extends BasicUIImplementation {
 	public void howWeWorkClicked(View v){
 		startActivity(new Intent(this,HowWeWorkActivity.class));	
 	}
+	
+	
+	
+	public void aboutUsClicked(View v){
+		startActivity(new Intent(this,AboutUsActivity.class));	
+	}
+	
 
 	
 

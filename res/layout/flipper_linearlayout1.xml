@@ -6,8 +6,7 @@
 
 	<ScrollView android:id="@+id/scrollView"
 		android:layout_width="match_parent" android:layout_height="367dp">
-		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
-			android:text="@string/agile_theory_1" android:textColor="@color/black"
+		<TextView style="@style/how_we_work_text_view" android:text="@string/agile_theory_1"
 			android:id="@+id/agile_theory" android:layout_width="match_parent"
 			android:layout_height="match_parent"></TextView>
 	</ScrollView>

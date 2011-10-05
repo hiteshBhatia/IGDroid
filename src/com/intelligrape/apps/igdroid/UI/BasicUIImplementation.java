@@ -1,28 +1,23 @@
 package com.intelligrape.apps.igdroid.UI;
 
-import com.intelligrape.apps.igdroid.ContactDetailActivity;
-import com.intelligrape.apps.igdroid.ContactInfoActivity;
-import com.intelligrape.apps.igdroid.ContactMailActivity;
-import com.intelligrape.apps.igdroid.CustomOnItemSelectedListener;
-import com.intelligrape.apps.igdroid.DashboardActivity;
-import com.intelligrape.apps.igdroid.Main;
-import com.intelligrape.apps.igdroid.R;
-import com.intelligrape.apps.igdroid.basicIntents.IntentManager;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ViewSwitcher.ViewFactory;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextSwitcher;
-import android.widget.ViewFlipper;
+import android.widget.ViewSwitcher.ViewFactory;
+
+import com.intelligrape.apps.igdroid.ContactDetailActivity;
+import com.intelligrape.apps.igdroid.ContactMailActivity;
+import com.intelligrape.apps.igdroid.CustomOnItemSelectedListener;
+import com.intelligrape.apps.igdroid.DashboardActivity;
+import com.intelligrape.apps.igdroid.R;
+import com.intelligrape.apps.igdroid.basicIntents.IntentManager;
 
 public class BasicUIImplementation extends Activity {
 

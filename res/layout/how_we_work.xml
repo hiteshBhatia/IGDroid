@@ -9,7 +9,7 @@
 
 	<ViewFlipper android:layout_width="match_parent"
 		android:outAnimation="@anim/slideout" android:inAnimation="@anim/slidein"
-		android:autoStart="true" android:flipInterval="5000" android:id="@+id/viewFlipper1" android:layout_height="419dp">
+		android:autoStart="true" android:flipInterval="5000" android:id="@+id/viewFlipper1" android:layout_height="400dp">
 		<include layout="@layout/flipper_linearlayout1" android:id="@+id/linearLayout1_ref"
 			android:layout_width="match_parent" android:layout_height="266dp" />
 		<include layout="@layout/flipper_linearlayout2" android:id="@+id/linearLayout1_ref"
@@ -29,7 +29,7 @@
 		<ImageButton android:layout_height="wrap_content" android:src="@drawable/ic_menu_home"
 			android:id="@+id/home" android:layout_width="100dp"
 			android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
-			android:layout_alignParentTop="true" android:onClick="homeButtonClicked" android:layout_toLeftOf="@+id/play"></ImageButton>
+			android:layout_alignParentTop="true" android:onClick="homeButtonClicked" android:layout_toLeftOf="@+id/play" android:cropToPadding="true"></ImageButton>
 
 		<ImageButton android:layout_height="wrap_content"
 			android:src="@android:drawable/ic_media_play" android:id="@+id/play"

@@ -22,20 +22,23 @@ public class Mail {
 		this.email = email;
 	}
 
-	public void sendMail() {
-		try {
-			String appsEmail = IGConstants.appsEmailAddress;
-			String appsPwd = IGConstants.appsPwd;
-			GMailSender sender = new GMailSender(appsEmail, "f@ge3kn3rd");
-			sender.sendMail(this.subject, getBody(), appsEmail, appsEmail);
+	public boolean sendMail() {
+		boolean success = true;
+		try {			
+				GMailSender sender = new GMailSender(IGConstants.APPS_EMAIL_ADD, IGConstants.APPS_PWD);
+				sender.sendMail(this.subject, getBody(), IGConstants.APPS_EMAIL_ADD, IGConstants.RECIPIENT);			
 		} catch (Exception e) {
 			Log.e("SendMail", e.getMessage(), e);
+			success = false;
 		}
+		return success;		
 	}
+
 
 	private String getBody() {
 		String body = "Dear Intelligrape";
-		body = body.concat("\nAbout ").concat(this.category);
+		body = body.concat("\nSubject ").concat(this.subject);
+		body = body.concat("\nCategory ").concat(this.category);
 		body = body.concat("\n\n").concat(this.comment);
 		body = body.concat("\n_______________");
 		body = body.concat("\n").concat(this.name).concat("\n")
