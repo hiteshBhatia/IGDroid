@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/app_back">
+
+	<TextView android:layout_height="wrap_content" style="@style/dashboard_textView"
+		android:layout_width="match_parent" android:text="@string/about_us"
+		android:id="@+id/TextView01"></TextView>
+
+
+	<TextView style="@style/dashboard_textView"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="@string/about_us_full" android:id="@+id/textView2"
+		android:layout_width="match_parent" android:layout_height="216dp"></TextView>
+
+	<TextView android:layout_width="match_parent" style="@style/dashboard_textView"
+		android:text="@string/testimonials" android:id="@+id/textView1"
+		android:layout_height="wrap_content"></TextView>
+
+	<include layout="@layout/about_us_frame" android:id="@+id/container_ref"
+		android:layout_width="match_parent" android:layout_height="135dp" />
+		
+	<ImageButton android:src="@drawable/ic_menu_home"
+		android:layout_width="match_parent" android:id="@+id/imageButton1"
+		android:layout_height="match_parent" android:onClick="homeButtonClicked"></ImageButton>
+	>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout android:id="@+id/linearLayout1" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+		<EditText android:hint="@string/Name" android:inputType="textPersonName"
+			android:layout_height="match_parent" android:layout_width="match_parent"
+			android:id="@+id/editText1"></EditText>
+			
+		<EditText android:layout_width="match_parent" android:id="@+id/editText2"
+			android:inputType="textEmailAddress" android:layout_height="wrap_content"
+			android:hint="@string/your_email" ></EditText>
+			
+		<EditText android:layout_width="match_parent" android:id="@+id/editText3"
+			android:layout_height="wrap_content" android:hint="@string/Subject"></EditText>
+
+		<Spinner android:layout_width="match_parent" android:id="@+id/spinner1"
+			android:layout_height="wrap_content"></Spinner>
+
+		<EditText android:layout_width="match_parent" android:id="@+id/editText4"
+			android:inputType="textMultiLine" android:hint="@string/Comment"
+			android:gravity="top" android:layout_height="245dp"></EditText>
+
+
+		<LinearLayout android:id="@+id/relativeLayoutQuery"
+			android:layout_height="wrap_content" android:layout_width="match_parent">
+			<ImageButton android:src="@drawable/ic_menu_home"
+				android:id="@+id/imageButton1" android:layout_width="114dp"
+				android:onClick="backButtonClicked" android:layout_height="match_parent"></ImageButton>				
+			<Button android:text="Send Mail" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:onClick="collectDataAndSendMail"
+				android:id="@+id/button2"></Button>
+		</LinearLayout>
+	</LinearLayout>
+

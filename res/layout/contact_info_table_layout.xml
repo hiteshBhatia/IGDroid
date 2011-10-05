@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:id="@+id/tableLayout1"
+	android:layout_height="wrap_content">
+
+	<TableRow android:id="@+id/tableRow1" style="@style/contact_info_table_row">
+		<TextView android:layout_height="wrap_content" android:id="@+id/textView3"
+			style="@style/how_we_work_text_view" android:layout_width="wrap_content"
+			android:text="@string/fax"></TextView>
+		<TextView android:layout_height="wrap_content" android:id="@+id/textView2"
+			style="@style/how_we_work_text_view" android:padding="10dp"
+			android:layout_width="match_parent" android:text="@string/our_number_2"></TextView>
+	</TableRow>
+
+
+
+	<TableRow android:id="@+id/tableRow1" style="@style/contact_info_table_row"
+		android:onClick="phoneNumberTapped">
+		<ImageButton android:layout_height="wrap_content"
+			android:src="@android:drawable/stat_sys_phone_call" android:id="@+id/imageButton1"
+			android:layout_width="wrap_content"></ImageButton>
+		<TextView android:id="@+id/textView2" style="@style/contact_info_table_text_view"
+			android:text="@string/our_number_1">
+		</TextView>
+	</TableRow>
+
+	<TableRow android:id="@+id/tableRow1" style="@style/contact_info_table_row"
+		android:onClick="emailUsTapped">
+		<ImageButton android:src="@android:drawable/sym_action_email"
+			android:id="@+id/imageButton2" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"></ImageButton>
+		<TextView android:id="@+id/textView2" style="@style/contact_info_table_text_view"
+			android:text="@string/emailUs">
+		</TextView>
+	</TableRow>
+
+	<TableRow android:id="@+id/tableRow3" style="@style/contact_info_table_row">
+		<ImageButton android:src="@android:drawable/ic_dialog_map"
+			android:id="@+id/imageButton3" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"></ImageButton>
+		<TextView android:id="@+id/textView3" style="@style/contact_info_table_text_view"
+			android:text="@string/locateUs">
+		</TextView>
+	</TableRow>
+
+
+	<TableRow android:id="@+id/tableRow4" style="@style/contact_info_table_row">
+		<ImageButton android:src="@android:drawable/ic_dialog_map"
+			android:id="@+id/imageButton4" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"></ImageButton>
+
+		<TextView android:id="@+id/textView4" style="@style/contact_info_table_text_view"
+			android:text="@string/find_us_on_web">
+		</TextView>
+	</TableRow>
+</TableLayout>
+
