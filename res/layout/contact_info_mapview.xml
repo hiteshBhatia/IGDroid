@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:weightSum="1">
+
+	<com.google.android.maps.MapView
+		android:id="@+id/map" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:clickable="true"
+		android:apiKey="0Z3HbRZDhLUWNHVFYHdJGY3S-d-gfglXb-GcFhg" android:layout_weight="1.00"/>
+	
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<Button android:text="@string/back" android:id="@+id/button1" android:onClick="backButtonClicked"
+			android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+			
+			<Button android:text="@string/you" android:id="@+id/youButton"			
+			android:layout_toRightOf="@id/button1" android:layout_width="wrap_content"
+			android:layout_toLeftOf="@+id/button3" android:onClick="youButtonClicked"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="@string/app_name" android:id="@id/button3"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true" android:onClick="intelligrapeButtonClicked"
+			android:layout_height="wrap_content"></Button>
+			
+						
+	</RelativeLayout>
+</LinearLayout>
