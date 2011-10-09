@@ -100,6 +100,7 @@
 	</string-array>
 	<string name="groovy_org">http://groovy.codehaus.org/</string>
 	<string name="grails_org">http://grails.org/</string>
+		<string name="intelligrape_web">http://intelligrape.com/</string>
 	<string name="search_google">Search It</string>
 	<string name="your_email">Your Email Id</string>
 	<string name="agile">Agile Mind-Set</string>
@@ -169,6 +170,10 @@
 	<string name="mail_alert_fail">Mail Sending Failed</string>
 	<string name="mail_alert">Are You Sure Want To Mail </string>
 	<string name="error_alert">All Fields Except Comment Are Required</string>
+	<string name="locate_us_label">Intelligrape - Locate Us</string>
+	<string name="back">Back</string>
+	<string name="you">You</string>
+	<string name="get_route">Get Route</string>
 	
 
 </resources>

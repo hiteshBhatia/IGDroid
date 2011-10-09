@@ -1,66 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="match_parent"
 	android:layout_height="match_parent" android:background="@drawable/app_back">
-	<TableLayout android:layout_height="match_parent"
-		android:layout_width="match_parent" android:id="@+id/tableLayout1">
-		<TableRow android:layout_height="wrap_content"
-			android:padding="20dp" android:id="@+id/tableRow1"
-			android:layout_width="wrap_content" android:onClick="ourTechnologyClicked">
+	<ScrollView
+	    android:id="@+id/dashboard_scroll_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentTop="true"
+	    android:layout_above="@+id/imageView1">
+	    <TableLayout android:layout_height="match_parent"
+    		android:layout_width="match_parent" android:id="@+id/tableLayout1">
+    
+    		<TableRow android:layout_height="wrap_content"
+    			android:padding="20dp" android:id="@+id/tableRow1"
+    			android:layout_width="wrap_content" android:onClick="ourTechnologyClicked">
+    
+    			<ImageView android:src="@drawable/technology" android:id="@+id/imageButton1"
+    				style="@style/dashboard_imageView"></ImageView>
+    
+    			<TextView android:text="@string/our_technology" style="@style/dashboard_textView"
+    				android:layout_width="wrap_content" android:id="@+id/textView1"
+    				android:layout_height="wrap_content" android:gravity="center_vertical"></TextView>
+    			<TextView />
+    		</TableRow>
+    
+    		<TableRow android:padding="20dp" android:layout_height="wrap_content"
+    			android:id="@+id/tableRow1" android:layout_width="wrap_content"
+    			android:onClick="howWeWorkClicked">
+    			<TextView />
+    			<TextView android:text="@string/how_we_work" style="@style/dashboard_textView"
+    				android:id="@+id/textView1" android:layout_height="wrap_content"
+    				android:gravity="right"></TextView>
+    			<ImageView android:src="@drawable/ic_tux" android:id="@+id/imageButton1"
+    				style="@style/dashboard_imageView"></ImageView>
+    		</TableRow>
+    
+    		<TableRow android:layout_margin="20dp" android:layout_height="wrap_content"
+    			android:id="@+id/tableRow1" android:layout_width="wrap_content"
+    			android:onClick="aboutUsClicked">
+    			<ImageView android:src="@drawable/about_us" android:id="@+id/imageButton1"
+    				style="@style/dashboard_imageView"></ImageView>
+    			<TextView android:text="@string/about_us" style="@style/dashboard_textView"
+    				android:layout_width="wrap_content" android:id="@+id/textView1"
+    				android:layout_height="wrap_content"></TextView>
+    		</TableRow>
+    
+    		<TableRow android:layout_margin="20dp" android:layout_height="wrap_content"
+    			android:id="@+id/tableRow1" android:layout_width="wrap_content"
+    			android:onClick="contactUsClicked">
+    			<TextView />
+    			<TextView android:text="@string/contactus" style="@style/dashboard_textView"
+    				android:layout_width="wrap_content" android:id="@+id/textView1"
+    				android:layout_height="wrap_content" android:gravity="right"></TextView>
+    			<ImageView android:clickable="true" android:src="@drawable/ic_contactus"
+    				android:id="@+id/imageButton1" style="@style/dashboard_imageView"></ImageView>
+    		</TableRow>
+    	</TableLayout>
+	</ScrollView>
 
-			<ImageView android:src="@drawable/technology" android:id="@+id/imageButton1"
-				style="@style/dashboard_imageView"></ImageView>
-
-			<TextView android:text="@string/our_technology" style="@style/dashboard_textView"
-				android:layout_width="wrap_content" android:id="@+id/textView1"
-				android:layout_height="wrap_content" android:gravity="center_vertical"></TextView>
-			<TextView />
-		</TableRow>
+	<ImageView android:id="@id/imageView1"
+		android:layout_alignParentBottom="true" android:layout_height="100dp"
+		android:src="@drawable/logo_intelligrape_img" android:background="@color/white"
+		android:layout_width="match_parent"></ImageView>
 
 
-
-
-
-		<TableRow android:padding="20dp" android:layout_height="wrap_content"
-			android:id="@+id/tableRow1" android:layout_width="wrap_content"
-			android:onClick="howWeWorkClicked">
-			<TextView />
-			<TextView android:text="@string/how_we_work" style="@style/dashboard_textView"
-				android:id="@+id/textView1" android:layout_height="wrap_content"
-				android:gravity="right"></TextView>
-			<ImageView android:src="@drawable/ic_tux" android:id="@+id/imageButton1"
-				style="@style/dashboard_imageView"></ImageView>
-		</TableRow>
-
-
-		<TableRow android:layout_margin="20dp" android:layout_height="wrap_content"
-			android:id="@+id/tableRow1" android:layout_width="wrap_content"
-			android:onClick="aboutUsClicked">
-			<ImageView android:src="@drawable/about_us" android:id="@+id/imageButton1"
-				style="@style/dashboard_imageView"></ImageView>
-			<TextView android:text="@string/about_us" style="@style/dashboard_textView"
-				android:layout_width="wrap_content" android:id="@+id/textView1"
-				android:layout_height="wrap_content"></TextView>
-		</TableRow>
-
-		<TableRow android:layout_margin="20dp" android:layout_height="wrap_content"
-			android:id="@+id/tableRow1" android:layout_width="wrap_content"
-			android:onClick="contactUsClicked">
-			<TextView />
-			<TextView android:text="@string/contactus" style="@style/dashboard_textView"
-				android:layout_width="wrap_content" android:id="@+id/textView1"
-				android:layout_height="wrap_content" android:gravity="right"></TextView>
-			<ImageView android:clickable="true" android:src="@drawable/ic_contactus"
-				android:id="@+id/imageButton1" style="@style/dashboard_imageView"></ImageView>
-		</TableRow>
-		
-		
-		
-		<ImageView android:background="@color/white"
-			android:src="@drawable/logo_intelligrape_img" android:id="@+id/imageView1"
-			android:layout_width="match_parent" android:layout_height="match_parent"></ImageView>
-	</TableLayout>
-
-
-
-</LinearLayout>
+</RelativeLayout>

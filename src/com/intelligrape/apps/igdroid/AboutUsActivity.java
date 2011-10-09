@@ -14,12 +14,10 @@ import com.intelligrape.apps.igdroid.src.Flip3DAnimation;
 
 public class AboutUsActivity extends Activity {
 
-	ArrayList<ImageView> imageViewsArray = new ArrayList();
-	ArrayList<ImageView> imageViewsArrayFull = new ArrayList();
+	
+	ArrayList<ImageView> imageViewsArrayFull = new ArrayList<ImageView>();
 	private ImageView image1;
-	private ImageView image2;
-	private ImageView image3;
-	private ImageView image4;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,17 +31,16 @@ public class AboutUsActivity extends Activity {
 	}
 	
 	private void setupViews() {
-		image1 = createImageViewByIdAndAddToArray(R.id.testimonial_img_01, false);
-		image2 = createImageViewByIdAndAddToArray(R.id.testimonial_img_02, true);
-		image3 = createImageViewByIdAndAddToArray(R.id.testimonial_img_03, true);
-		image4 = createImageViewByIdAndAddToArray(R.id.testimonial_img_04, true);		
-		hideImageViews();
+		image1 = createImageViewByIdAndAddToArray(R.id.testimonial_img_01);
+		createImageViewByIdAndAddToArray(R.id.testimonial_img_02);
+		createImageViewByIdAndAddToArray(R.id.testimonial_img_03);
+		createImageViewByIdAndAddToArray(R.id.testimonial_img_04);		
+		hideImageViewsExcept(image1);
 		addOnClickListenerToArrayElements(imageViewsArrayFull);
 
 	}
 
-	private void addOnClickListenerToArrayElements(
-			ArrayList<ImageView> imageViewArrayArg) {
+	private void addOnClickListenerToArrayElements(ArrayList<ImageView> imageViewArrayArg) {
 		for (final ImageView iv : imageViewArrayArg) {
 			iv.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View view) {
@@ -54,32 +51,29 @@ public class AboutUsActivity extends Activity {
 
 	}
 
-	private ImageView createImageViewByIdAndAddToArray(int id, boolean add) {
+	private ImageView createImageViewByIdAndAddToArray(int id) {
 		ImageView image = (ImageView) findViewById(id);
-		imageViewsArrayFull.add(image);
-		if (add) {
-			imageViewsArray.add(image);
-		}
+		imageViewsArrayFull.add(image);		
 		return image;
 	}
 
-	private void hideImageViews() {
-		for (ImageView imageView : imageViewsArray) {
+	private void hideImageViewsExcept(ImageView image) {
+		for (ImageView imageView : imageViewsArrayFull) {
+			if(imageView != image){
 			imageView.setVisibility(View.GONE);
+			}
 		}
 	}
 
-	private void applyRotation(ImageView image, float start, float end) {
+	private void applyRotation(ImageView image, float start, float end) {		
 		final float centerX = image.getWidth() / 2.0f;
 		final float centerY = image.getHeight() / 2.0f;
-
-		final Flip3DAnimation rotation = new Flip3DAnimation(start, end,
-				centerX, centerY);
+		hideImageViewsExcept(image);
+		final Flip3DAnimation rotation = new Flip3DAnimation(start, end,centerX, centerY);
 		rotation.setDuration(IGConstants.ANIM_DURATION);
 		rotation.setFillAfter(true);
 		rotation.setInterpolator(new AccelerateInterpolator());
 		rotation.setAnimationListener(new DisplayNextView(image,imageViewsArrayFull));
 		image.startAnimation(rotation);
-
 	}
 }

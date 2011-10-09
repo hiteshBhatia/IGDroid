@@ -27,7 +27,7 @@ public class IntentManager {
 		return emailIntent;
 	}
 
-	public Intent createBrowserIntent(String url) {
+	public Intent createViewIntent(String url) {
 		Intent intent = new Intent(Intent.ACTION_VIEW);
 		intent.setData(Uri.parse(url));
 		return intent;

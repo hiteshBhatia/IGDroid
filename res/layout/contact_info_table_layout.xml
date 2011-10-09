@@ -34,7 +34,7 @@
 		</TextView>
 	</TableRow>
 
-	<TableRow android:id="@+id/tableRow3" style="@style/contact_info_table_row">
+	<TableRow android:id="@+id/tableRow3" style="@style/contact_info_table_row" android:onClick="locateUsClicked">
 		<ImageButton android:src="@android:drawable/ic_dialog_map"
 			android:id="@+id/imageButton3" android:layout_height="wrap_content"
 			android:layout_width="wrap_content"></ImageButton>
@@ -44,13 +44,12 @@
 	</TableRow>
 
 
-	<TableRow android:id="@+id/tableRow4" style="@style/contact_info_table_row">
+	<TableRow android:id="@+id/tableRow4" style="@style/contact_info_table_row" android:onClick="findUsOnWebClicked">
 		<ImageButton android:src="@android:drawable/ic_dialog_map"
 			android:id="@+id/imageButton4" android:layout_height="wrap_content"
 			android:layout_width="wrap_content"></ImageButton>
-
 		<TextView android:id="@+id/textView4" style="@style/contact_info_table_text_view"
-			android:text="@string/find_us_on_web">
+			android:text="@string/find_us_on_web" >
 		</TextView>
 	</TableRow>
 </TableLayout>

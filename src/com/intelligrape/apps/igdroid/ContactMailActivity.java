@@ -10,15 +10,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.intelligrape.apps.igdroid.UI.BasicUIImplementation;
+import com.intelligrape.apps.igdroid.Basic.BasicReuseableComponents;
 import com.intelligrape.apps.igdroid.constants.IGConstants;
 import com.intelligrape.apps.igdroid.domain.Mail;
 
-public class ContactMailActivity extends BasicUIImplementation implements
+public class ContactMailActivity extends BasicReuseableComponents implements
 		Runnable {
 
 	private EditText nameTextBox;
@@ -26,7 +25,7 @@ public class ContactMailActivity extends BasicUIImplementation implements
 	private EditText subjectTextBox;
 	private EditText commentTextBox;
 	private Spinner spinner;
-	private AlertDialog alertDialog;
+	
 	private ContactMailActivity contactMailActivity;
 	String positiveButtonTitle = IGConstants.POS_BUTTON_TITLE;
 	String negativeButtonTitle = IGConstants.NEG_BUTTON_TITLE;

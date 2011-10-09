@@ -1,34 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<LinearLayout android:id="@+id/linearLayout1" xmlns:android="http://schemas.android.com/apk/res/android"
-		android:orientation="vertical" android:layout_height="wrap_content"
+<RelativeLayout android:id="@+id/linearLayout1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<ScrollView android:id="@+id/contact_us_query_scroll_view"
+		android:layout_alignParentTop="true" android:layout_width="match_parent"
+		android:layout_above="@+id/relativeLayoutQuery" android:layout_height="wrap_content">
+
+		<RelativeLayout android:id="@+id/linearLayout1"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+
+			<EditText android:hint="@string/Name" android:inputType="textPersonName"
+				android:layout_alignParentTop="true" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/editText1"></EditText>
+
+			<EditText android:layout_width="match_parent" android:id="@+id/editText2"
+				android:layout_below="@id/editText1" android:inputType="textEmailAddress"
+				android:layout_height="wrap_content" android:hint="@string/your_email"></EditText>
+
+			<EditText android:layout_width="match_parent" android:id="@+id/editText3"
+				android:layout_below="@id/editText2" android:layout_height="wrap_content"
+				android:hint="@string/Subject"></EditText>
+
+			<Spinner android:layout_width="match_parent" android:id="@+id/spinner1"
+				android:layout_below="@id/editText3" android:layout_height="wrap_content"></Spinner>
+
+
+			<EditText android:layout_width="match_parent" android:id="@+id/editText4"
+				android:layout_height="240dp" android:layout_below="@id/spinner1"
+				
+				android:inputType="textMultiLine" android:hint="@string/Comment"
+				android:gravity="top"></EditText>
+		</RelativeLayout>
+	</ScrollView>
+
+
+
+	<LinearLayout android:id="@id/relativeLayoutQuery"
+		android:layout_alignParentBottom="true" android:layout_height="wrap_content"
 		android:layout_width="match_parent">
-		<EditText android:hint="@string/Name" android:inputType="textPersonName"
-			android:layout_height="match_parent" android:layout_width="match_parent"
-			android:id="@+id/editText1"></EditText>
-			
-		<EditText android:layout_width="match_parent" android:id="@+id/editText2"
-			android:inputType="textEmailAddress" android:layout_height="wrap_content"
-			android:hint="@string/your_email" ></EditText>
-			
-		<EditText android:layout_width="match_parent" android:id="@+id/editText3"
-			android:layout_height="wrap_content" android:hint="@string/Subject"></EditText>
-
-		<Spinner android:layout_width="match_parent" android:id="@+id/spinner1"
-			android:layout_height="wrap_content"></Spinner>
-
-		<EditText android:layout_width="match_parent" android:id="@+id/editText4"
-			android:inputType="textMultiLine" android:hint="@string/Comment"
-			android:gravity="top" android:layout_height="245dp"></EditText>
-
-
-		<LinearLayout android:id="@+id/relativeLayoutQuery"
-			android:layout_height="wrap_content" android:layout_width="match_parent">
-			<ImageButton android:src="@drawable/ic_menu_home"
-				android:id="@+id/imageButton1" android:layout_width="114dp"
-				android:onClick="backButtonClicked" android:layout_height="match_parent"></ImageButton>				
-			<Button android:text="Send Mail" android:layout_height="wrap_content"
-				android:layout_width="match_parent" android:onClick="collectDataAndSendMail"
-				android:id="@+id/button2"></Button>
-		</LinearLayout>
+		<Button android:src="@drawable/ic_menu_home" android:text="@string/back"
+			android:id="@+id/imageButton1" android:layout_width="114dp"
+			android:onClick="backButtonClicked" android:layout_height="match_parent"></Button>
+		<Button android:text="Send Mail" android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:onClick="collectDataAndSendMail"
+			android:id="@+id/button2"></Button>
 	</LinearLayout>
+</RelativeLayout>
 

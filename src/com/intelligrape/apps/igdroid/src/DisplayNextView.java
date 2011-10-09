@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 import android.view.animation.Animation;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 public final class DisplayNextView implements Animation.AnimationListener {	
 	ImageView image1;
@@ -13,8 +11,8 @@ public final class DisplayNextView implements Animation.AnimationListener {
 
 	public DisplayNextView(ImageView image,ArrayList<ImageView> imageViewsArray) {
 		this.image1= image;
-		int index = imageViewsArray.indexOf(image);
-		Integer nextIndex = (index + 1) % 4;				
+		int index = imageViewsArray.indexOf(image);		
+		Integer nextIndex = (index + 1) % 4;		
 		this.image2 =  imageViewsArray.get(nextIndex);
 	}
 
@@ -24,6 +22,5 @@ public final class DisplayNextView implements Animation.AnimationListener {
 		image1.post(new SwapViews(image1, image2));
 	}
 
-	public void onAnimationRepeat(Animation animation) {		
-	}
+	public void onAnimationRepeat(Animation animation) {}
 }

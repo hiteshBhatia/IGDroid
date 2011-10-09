@@ -2,7 +2,6 @@ package com.intelligrape.apps.igdroid.domain;
 
 import android.util.Log;
 
-import com.intelligrape.apps.igdroid.R;
 import com.intelligrape.apps.igdroid.constants.IGConstants;
 import com.intelligrape.apps.igdroid.mailSender.GMailSender;
 
@@ -26,7 +25,8 @@ public class Mail {
 		boolean success = true;
 		try {			
 				GMailSender sender = new GMailSender(IGConstants.APPS_EMAIL_ADD, IGConstants.APPS_PWD);
-				sender.sendMail(this.subject, getBody(), IGConstants.APPS_EMAIL_ADD, IGConstants.RECIPIENT);			
+				success = sender.sendMail(this.subject, getBody(), IGConstants.APPS_EMAIL_ADD, IGConstants.RECIPIENT);
+				System.out.print("**********"+success);
 		} catch (Exception e) {
 			Log.e("SendMail", e.getMessage(), e);
 			success = false;

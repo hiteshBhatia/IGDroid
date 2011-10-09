@@ -4,15 +4,15 @@
 	android:layout_height="135dp">
 
 	<include layout="@layout/aboutus_layout01" android:id="@+id/Layout01_ref"
-		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
 
 	<include layout="@layout/aboutus_layout02" android:id="@+id/Layout01_ref"
-		android:layout_width="fill_parent" android:layout_height="133dp" />
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
 
 	<include layout="@layout/aboutus_layout03" android:id="@+id/Layout01_ref"
 		android:layout_width="fill_parent" android:layout_height="wrap_content" />
 
 	<include layout="@layout/aboutus_layout04" android:id="@+id/Layout01_ref"
-		android:layout_width="fill_parent" android:layout_height="132dp" />
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </FrameLayout>
 

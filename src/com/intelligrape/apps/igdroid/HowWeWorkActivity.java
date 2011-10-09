@@ -1,16 +1,12 @@
 package com.intelligrape.apps.igdroid;
 
-import com.intelligrape.apps.igdroid.UI.BasicUIImplementation;
-
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ViewFlipper;
 
-public class HowWeWorkActivity extends BasicUIImplementation {
+import com.intelligrape.apps.igdroid.Basic.BasicReuseableComponents;
+
+public class HowWeWorkActivity extends BasicReuseableComponents {
     boolean isRunning = true ;
 	private ViewFlipper vf;
 	@Override

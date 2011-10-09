@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/Layout01" android:layout_width="fill_parent"
+	android:id="@+id/Layout01" android:layout_width="match_parent"	
+	android:layout_height="match_parent">
 	
-	android:layout_height="132dp">
 	<ImageView android:layout_height="wrap_content" android:src="@drawable/testimonial_mik"
-		android:id="@+id/testimonial_img_04" android:layout_width="match_parent"
+		android:id="@+id/testimonial_img_04" android:layout_width="fill_parent"
 		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></ImageView>
 </RelativeLayout>
 

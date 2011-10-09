@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="match_parent"
-	android:layout_height="match_parent" android:weightSum="1"
-	android:background="@drawable/app_back">
+	android:layout_height="match_parent" android:background="@drawable/app_back">
 
 	<TextView android:layout_width="match_parent" android:text="@string/our_address"
 		android:id="@+id/textView1" style="@style/how_we_work_text_view"
 		android:layout_height="wrap_content"></TextView>
 
-	<include layout="@layout/contact_info_table_layout" android:id="@+id/tableLayout1_ref"
-		android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1"/>
-	
+	<ScrollView android:id="@+id/contact_info_scoll_view"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/textView1" android:layout_above="@id/imageButton1">
+		<include layout="@layout/contact_info_table_layout"
+			android:id="@+id/tableLayout1_ref" android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</ScrollView>
+
 	<ImageButton android:onClick="backButtonClicked"
-		android:src="@drawable/ic_menu_home" android:layout_height="64dp"
-		android:layout_width="match_parent" android:id="@+id/imageButton1" android:layout_alignParentBottom="true"></ImageButton>
+		android:src="@drawable/ic_menu_home" android:layout_height="50dp"
+		android:layout_width="match_parent" android:id="@+id/imageButton1"
+		android:layout_alignParentBottom="true"></ImageButton>
 </RelativeLayout>
