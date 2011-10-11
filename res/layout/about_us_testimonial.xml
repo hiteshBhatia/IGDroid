@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/app_back">
+
+
+	<ViewFlipper android:layout_width="match_parent" android:layout_alignParentTop="true"
+		android:layout_above="@+id/imageButton1"
+		android:outAnimation="@anim/slideup" android:inAnimation="@anim/slideupfrombottom"
+		android:autoStart="true" android:flipInterval="5000"
+		android:id="@+id/testimonial_view_flipper" android:layout_height="match_parent">
+
+		<include layout="@layout/aboutus_layout01" android:id="@+id/Layout01_ref"
+			android:layout_width="match_parent" android:layout_height="match_parent" />
+
+		<include layout="@layout/aboutus_layout02" android:id="@+id/Layout01_ref"
+			android:layout_width="match_parent" android:layout_height="match_parent" />
+
+		<include layout="@layout/aboutus_layout03" android:id="@+id/Layout01_ref"
+			android:layout_width="match_parent" android:layout_height="match_parent" />
+
+		<include layout="@layout/aboutus_layout04" android:id="@+id/Layout01_ref"
+			android:layout_width="match_parent" android:layout_height="match_parent" />
+ 
+	</ViewFlipper>
+	
+	<Button android:onClick="backButtonClicked"
+		android:text="Back" android:layout_height="50dp"
+		android:layout_width="match_parent" android:id="@id/imageButton1"
+		android:layout_alignParentBottom="true"></Button>
+
+
+</RelativeLayout>
