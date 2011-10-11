@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/Layout01" android:layout_width="fill_parent"
-	android:layout_height="wrap_content" >
-	<ImageView android:id="@+id/testimonial_img_03" android:src="@drawable/testimonial_geo"
-		android:layout_height="wrap_content" android:layout_width="match_parent"
-		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></ImageView>
+	android:layout_height="wrap_content">
+	
+	<TextView android:id="@+id/testimonial_img_03" style="@style/testimonial_full_config"
+		android:text="@string/testimonial_george">
+	</TextView>
 </RelativeLayout>
 

@@ -8,7 +8,9 @@
 	<uses-permission android:name="android.permission.CALL_PHONE"/>
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>	    
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>	   
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	 
 	<application android:label="@string/app_name" android:icon="@drawable/ig_logo">	
 		<activity android:name=".MainActivity" android:label="@string/app_name">
 			<intent-filter>
@@ -24,6 +26,8 @@
 		<activity android:name=".AboutUsActivity" android:label="@string/about_us_label"></activity>
 		<activity android:name=".ContactDetailActivity" android:label="@string/intelligrape_contact_us_label"></activity>
 		<activity android:name=".ContactMailActivity" android:label="@string/contactDetailsMail"></activity>
+		<activity android:name=".BlogActivity" android:label="@string/intelligrape_blogs_label"></activity>
+		<activity android:name="TestimonialActivity" android:label="@string/intelligrape_testimonials_label"></activity>
 		<uses-library android:name="com.google.android.maps"/>
 	</application>
 </manifest>

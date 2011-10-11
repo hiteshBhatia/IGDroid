@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="match_parent"
-	android:layout_height="match_parent" android:background="@drawable/app_back">
+	android:id="@+id/about_us_layout" android:layout_height="match_parent"
+	android:background="@drawable/app_back">
 
 	<TextView android:layout_height="wrap_content" style="@style/dashboard_textView"
 		android:layout_width="match_parent" android:text="@string/about_us"
@@ -10,25 +11,26 @@
 
 	<TextView style="@style/dashboard_textView"
 		android:textAppearance="?android:attr/textAppearanceSmall"
-		android:layout_below="@id/TextView01" android:text="@string/about_us_full"		
-		android:id="@+id/textView2" android:layout_width="match_parent"
-		android:layout_height="wrap_content"></TextView>
+		android:layout_below="@id/TextView01" android:text="@string/about_us_full"
+		android:id="@+id/about_us_text_view" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_above="@+id/relativeLayout1"></TextView>
+	
 
-	<TextView android:layout_width="match_parent" style="@style/dashboard_textView"
-		android:text="@string/testimonials" android:id="@+id/textView1"
-		android:layout_below="@id/textView2"
-		android:layout_height="wrap_content"></TextView>
-
-	<include layout="@layout/about_us_frame" android:id="@+id/container_ref"
-		android:layout_width="match_parent"
-		android:layout_below="@id/textView1"
-		android:layout_above="@+id/imageButton1"
-		android:layout_height="wrap_content" />
-
-	<ImageButton android:src="@drawable/ic_menu_home"
-		android:layout_alignParentBottom="true" android:id="@id/imageButton1"
-		android:onClick="homeButtonClicked"
-		android:layout_width="match_parent" android:layout_height="50dp">
+	<RelativeLayout android:layout_height="50dp"
+		android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:id="@+id/relativeLayout1">
+		<ImageButton android:src="@drawable/ic_menu_home"
+			android:layout_alignParentBottom="true" android:id="@+id/imageButton1"
+			android:onClick="homeButtonClicked" android:layout_width="wrap_content"
+			android:layout_toLeftOf="@+id/testimonialButton"
+			android:layout_alignParentLeft="true"
+			android:layout_height="fill_parent">
 		</ImageButton>
+		<Button android:text="@string/testimonials"
+			android:layout_alignParentBottom="true" android:id="@id/testimonialButton"
+			android:layout_alignParentRight="true"
+			android:onClick="testimonialButtonClicked" android:layout_width="wrap_content"
+			android:layout_height="fill_parent">
+		</Button>
+	</RelativeLayout>
 
 </RelativeLayout>

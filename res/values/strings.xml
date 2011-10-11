@@ -174,6 +174,16 @@
 	<string name="back">Back</string>
 	<string name="you">You</string>
 	<string name="get_route">Get Route</string>
+	<string name="our_blogs">Our Blogs</string>
+	<string name="intelligrape_blogs_label">Intelligrape - Blogs</string>
+	<string name="loading_please_wait">Loading .. Please Wait</string>
+	<string name="intelligrape_testimonials_label">Intelligrape - Testimonials</string>
+	<string name="testimonial_justin">I have been working with Intelligrape for the past 2 years. They have handled everything from development to server setup. They are always available to fix any 
+	emergencies that come up. I really can\'t recommend Intelligrape highly enough. - Justin Nolan - Founder of BuildingBlok
+	</string>
+	<string name="testimonial_mikael">Agile methods combined with Grails, constant communication and experienced developers make it a very smooth experience working with Intelligrape. Out first project is almost complete and we look forward to initiate the next. - Mikael Andersson - Co-Founder of Altaworks AB, Sweden </string>
+	<string name="testimonial_george">We get great results with IntelliGrape. Over time, we have entrusted them with building more and more of core functionality. Team we have worked with is very responsive and reliable. - George Lee - Co-Founder of CloudFi Inc., California, US </string>
+	<string name="testmonial_fabian">"Apart from experience, the most important thing to consider when outsourcing your project to an external company is trust. I confirm that I highly trust IntelliGrape\'s team and I will definitely work with them again and again. - Fabien Benichou - Founder And CEO of Irosport SAS, France"</string>
 	
 
 </resources>

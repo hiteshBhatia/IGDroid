@@ -3,7 +3,10 @@ package com.intelligrape.apps.igdroid.Basic;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -63,6 +66,20 @@ public class BasicReuseableComponents extends Activity {
 	public void startBrowserWithUrl(String url) {
 		Intent browserIntent = IntentManager.getInstance().createViewIntent(url);
 		startActivity(browserIntent);
+	}
+	
+	public boolean isNetworkAvailable() {
+		  boolean HaveConnectedWifi = false;		   
+		    ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		    NetworkInfo[] netInfo = cm.getAllNetworkInfo();
+		    for (NetworkInfo ni : netInfo)
+		    {
+		        if (ni.getTypeName().equalsIgnoreCase("WIFI"))
+		            if (ni.isConnected())
+		                HaveConnectedWifi = true;
+		        
+		    }
+		    return HaveConnectedWifi ;
 	}
 	
 	

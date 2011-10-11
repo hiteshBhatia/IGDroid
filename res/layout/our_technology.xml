@@ -3,13 +3,19 @@
 	android:orientation="vertical" android:layout_width="match_parent"
 	android:layout_height="match_parent" android:weightSum="1"
 	android:background="@drawable/app_back">
-	<TextView android:layout_width="match_parent" android:layout_alignParentTop="true"
-		android:textColor="@color/black" android:text="@string/our_technology_exp"
-		android:textAppearance="?android:attr/textAppearanceSmall"
-		android:gravity="center" android:id="@+id/textView1"
-		android:layout_gravity="center_horizontal" android:typeface="serif"
-		android:layout_above="@+id/relativeLayoutOurTech"
-		android:layout_height="wrap_content"></TextView>
+	<ScrollView
+	    android:id="@+id/our_technology_scroll_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_above="@+id/relativeLayoutOurTech">
+	    <TextView android:layout_width="match_parent" android:textColor="@color/black" android:text="@string/our_technology_exp"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:gravity="center" android:id="@+id/textView1"
+    		android:typeface="serif"
+    		android:layout_height="wrap_content"></TextView>
+	</ScrollView>
 
 	<RelativeLayout android:id="@id/relativeLayoutOurTech"	android:layout_above="@+id/textSwitcher1"	
 		android:layout_width="wrap_content" android:layout_height="wrap_content">
@@ -26,7 +32,7 @@
 
 
 	<TextSwitcher android:id="@id/textSwitcher1" android:layout_above="@+id/relativeLayoutOurTech2"
-		android:layout_width="match_parent" android:layout_height="100dp"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
 		android:layout_weight="0.91">
 	</TextSwitcher>
 
@@ -38,18 +44,13 @@
 			android:layout_height="48dp" android:src="@drawable/ic_menu_home"
 			android:layout_alignParentLeft="true" android:id="@+id/imageButton1"						
 			android:onClick="homeButtonClicked"></ImageButton>
-			
-		<Button android:layout_width="wrap_content" android:id="@id/button2"
-			 android:onClick="searchGoogleClicked"
-			 android:layout_toRightOf="@id/imageButton1"
-			 android:layout_toLeftOf="@+id/prev_button"
-			android:text="@string/search_google" android:layout_height="wrap_content"></Button>
-		
-		<Button android:layout_width="wrap_content" android:id="@id/prev_button"
-			android:text="Prev" android:layout_toLeftOf="@+id/next_button"
+							
+		<Button android:layout_width="wrap_content" android:id="@+id/prev_button"
+			android:text="Previous" android:layout_toRightOf="@+id/imageButton1" 
 			android:layout_height="wrap_content" android:onClick="prevButtonClicked"></Button>
 			
 		<Button android:layout_width="wrap_content" android:id="@+id/next_button"
+		android:layout_toRightOf="@id/prev_button"
 			android:layout_alignParentRight="true" android:text="Next"
 			android:layout_height="wrap_content"></Button>
 	</RelativeLayout>

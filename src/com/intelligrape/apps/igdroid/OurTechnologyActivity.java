@@ -1,6 +1,6 @@
+
 package com.intelligrape.apps.igdroid;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.ViewSwitcher.ViewFactory;
 
 import com.intelligrape.apps.igdroid.Basic.BasicReuseableComponents;
-import com.intelligrape.apps.igdroid.basicIntents.IntentManager;
 
 public class OurTechnologyActivity extends BasicReuseableComponents implements
 		ViewFactory, OnClickListener {
@@ -67,15 +66,7 @@ public class OurTechnologyActivity extends BasicReuseableComponents implements
 		String url = getResources().getString(R.string.grails_org);
 		startBrowserWithUrl(url);
 	}
-
-	public void searchGoogleClicked(View v) {
-		if (term.length() != 0) {
-			Intent searchIntent = IntentManager.getInstance()
-					.createSearchIntent(term);
-			startActivity(searchIntent);
-		}
-	}
-
+	
 	public void prevButtonClicked(View v) {
 		if (mCounter > 0) {
 			int negativeOne = -1;
